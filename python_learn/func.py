@@ -30,5 +30,45 @@ def my_func2():
 my_func2()
 
 
+# func3
+mylist1 = [1, 2, 3, 4]
+
+def change_list1(list1):
+    list1[1] = 'number'
+
+    return list1
+
+change_list1(mylist1)
+print(mylist1)
+
+
+# func4
+mylist2 = [5, 6, 7, 8]
+
+def change_list2(list2):
+    list2 = [9, 10, 11, 12]
+
+    return list2
+
+change_list2(mylist2)
+print(mylist2)
+
+# func5
+def get_sum(a, b=2):
+    sum = a + b
+    return sum
+
+value = get_sum(2)
+print(value)
+
+
+# func6
+def print_some(name, *age):  # *age→(1,2,3,4); **age→(age=1, age2=2, age3=3, age4=4)
+    print('name:', name)
+    print(age)  # tuple
+    print('age:', age)
+
+print_some('xz', 1,2,3,4)  # *age→(1,2,3,4); **age→('age':1, 'age1':2, 'age3':3, 'age4':4)
+
 
 
