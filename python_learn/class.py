@@ -55,4 +55,5 @@ class Son(Father):
 
 xzz = Son('xzz', 18)
 xzz.print_some()
+print()
 
